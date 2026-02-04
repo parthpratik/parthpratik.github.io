@@ -1,0 +1,178 @@
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 22:36:32.11 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2236.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2237.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 22:45:14.92 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2245.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2245.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+✅ Pipeline completed successfully at 22:46:33.86 
+ 
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 22:48:41.31 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2249.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2249.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+✅ Pipeline completed successfully at 22:49:38.55 
+ 
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 22:50:51.39 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2251.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2251.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+✅ Pipeline completed successfully at 22:51:45.00 
+ 
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 22:58:56.10 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2259.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2259.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+✅ Pipeline completed successfully at 23:00:45.67 
+ 
+================================================ 
+🚀 Pipeline started on 21-10-2025 at 23:01:00.46 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251021_2301.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251021_2301.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+⚠️ Power BI refresh failed at 23:02:38.21. 
+================================================ 
+🚀 Pipeline started on 25-10-2025 at 13:03:21.78 
+================================================ 
+[1/2] Running Python automation... 
+Traceback (most recent call last):
+^C================================================ 
+🚀 Pipeline started on 25-10-2025 at 15:41:12.71 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251025_1541.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251025_1541.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+================================================ 
+🚀 Pipeline started on 18-11-2025 at 20:52:00.76 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251118_2052.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251118_2052.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+================================================ 
+🚀 Pipeline started on 18-11-2025 at 21:28:48.31 
+================================================ 
+[1/2] Running Python automation... 
+Logged into Kaggle via Google
+⬇Downloading from API: https://www.kaggle.com/api/v1/datasets/download/gokulrajkmv/unemployment-in-india
+Dataset downloaded: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_data.zip
+Dataset extracted to C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:28: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\transform_data.py:29: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df = df.fillna(method="ffill")
+Cleaned dataset saved: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_cleaned_20251118_2129.csv
+Fixed file updated for Power BI: C:\Users\parth\OneDrive - wilp.bits-pilani.ac.in\Mtech\data\unemployment_latest.csv
+AI Insights saved: data\ai_insights_20251118_2129.txt
+
+All steps completed successfully!
+[2/2] Launching Power BI for dashboard refresh... 
+✅ Pipeline completed successfully at 21:30:36.44 
+ 
