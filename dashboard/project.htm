@@ -3,131 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth Pratik | Data & Product Analyst Portfolio</title>
+    <title>Parth Pratik | Data Analyst Portfolio</title>
+
+    <!-- Smooth Scroll -->
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f6f7fb;
+        html { scroll-behavior: smooth; }
+    </style>
+
+    <!-- MAIN CSS -->
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
-        header {
-            background-color: #111827;
-            color: white;
-            padding: 40px 20px;
+        body {
+            background: #0b0f19;
+            color: #fff;
+        }
+
+        /* ANIMATIONS */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed; top: 0; width: 100%;
+            display: flex; justify-content: space-between;
+            padding: 25px 60px;
+            background: rgba(10,12,24,0.6);
+            backdrop-filter: blur(8px);
+            z-index: 999;
+        }
+        .nav-left {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .nav-right a {
+            margin: 0 16px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            position: relative;
+        }
+        .nav-right a:after {
+            content: ""; position: absolute;
+            width: 0; height: 2px;
+            bottom: -4px; left: 0;
+            background: #00b7ff;
+            transition: 0.3s;
+        }
+        .nav-right a:hover:after { width: 100%; }
+
+        .resume-btn {
+            padding: 8px 18px;
+            border: 2px solid #00b7ff;
+            border-radius: 25px;
+        }
+        .resume-btn:hover {
+            background: #00b7ff; color: #000;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background: url('YOUR_BACKGROUND_IMAGE') no-repeat center/cover;
+            position: relative;
+        }
+        .overlay {
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.60);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
         }
-        header img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 4px solid white;
+        .hero-text h1 {
+            font-size: 70px; font-weight: 800; letter-spacing: 3px;
+            background: linear-gradient(45deg, #fff, #00b7ff);
+            -webkit-background-clip: text;
+            color: transparent;
         }
-        h1 { margin-top: 15px; }
+
+        /* SECTIONS */
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 25px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 100px 60px;
         }
-        .project img {
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            color: #00b7ff;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        #about p {
+            width: 75%; margin: auto;
+            font-size: 18px; text-align: center;
+            line-height: 1.8; color: #ddd;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex; flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .skill-badge {
+            padding: 12px 22px;
+            border-radius: 30px;
+            border: 1px solid #00b7ff;
+            background: #111827;
+            animation: float 3s infinite;
+        }
+
+        /* PROJECT GRID */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,183,255,0.2);
+            transition: 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px rgba(0,183,255,0.4);
+        }
+        .project-card img {
             width: 100%;
             border-radius: 10px;
+            margin: 12px 0;
         }
+        .project-card a {
+            background: #00b7ff;
+            color: #000;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        /* DASHBOARD */
+        iframe {
+            width: 100%; height: 600px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 25px rgba(0,183,255,0.3);
+        }
+
+        /* CONTACT */
+        #contact p {
+            text-align: center; font-size: 20px;
+        }
+        #contact a { color: #00b7ff; font-weight: 600; }
+
+        /* FOOTER */
         footer {
+            background: #000;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
-            background: #111827;
-            color: white;
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skills-list span {
-            background: #e5e7eb;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 18px;
-            background-color: #2563eb;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            margin-top: 10px;
+            color: #aaa;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <img src="your-photo.jpg" alt="Parth Photo">
-    <h1>Parth Pratik</h1>
-    <p>Data Analyst • Product Analyst • BI Developer</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a Data/Product Analyst with experience in SQL, Power BI, Python, and product analytics.
-        I create dashboards, cohorts, funnels, and insights that help teams make better decisions.
-    </p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <div class="skills-list">
-        <span>SQL</span><span>Power BI</span><span>Python</span><span>Excel</span>
-        <span>Mixpanel</span><span>Amplitude</span><span>GA4</span><span>Firebase</span>
-        <span>Cohort Analysis</span><span>Funnel Analysis</span><span>A/B Testing</span>
-        <span>Tableau</span><span>Data Modeling</span><span>Dashboards</span>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>📊 BlinkIT Grocery Sales Dashboard (Power BI)</h3>
-        <img src="dashboards/blinkit_dashboard.jpg" alt="BlinkIT Dashboard">
-        <a class="button" href="YOUR_POWER_BI_LINK" target="_blank">View Dashboard</a>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="nav-left">PARTH PRATIK</div>
+        <div class="nav-right">
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#dashboard">DASHBOARD</a>
+            <a href="#contact">CONTACT</a>
+            <a href="resume.pdf" class="resume-btn">RESUME</a>
+        </div>
     </div>
 
-    <br><br>
-
-    <div class="project">
-        <h3>📉 Product Funnel & Cohort Analysis</h3>
-        <img src="dashboards/funnel.jpg" alt="Funnel Analysis">
-        <a class="button" href="YOUR_GITHUB_PROJECT_URL" target="_blank">View Project</a>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1 id="typing-text"></h1>
+        </div>
     </div>
 
-    <br><br>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="section-title">ABOUT ME</h2>
+        <p>
+            I am a Data Analyst skilled in SQL, Python, Power BI, Looker Studio and analytics.
+            I turn raw data into compelling stories, dashboards, and insights that help businesses grow.
+        </p>
+    </section>
 
-    <div class="project">
-        <h3>📈 Customer Retention Analysis (SQL + Python)</h3>
-        <img src="dashboards/cohort.jpg" alt="Cohort Dashboard">
-        <a class="button" href="YOUR_PROJECT_LINK" target="_blank">View Case Study</a>
-    </div>
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="skills">
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Power BI</span>
+            <span class="skill-badge">Looker Studio</span>
+            <span class="skill-badge">Excel</span>
+            <span class="skill-badge">Cohort Analysis</span>
+            <span class="skill-badge">A/B Testing</span>
+            <span class="skill-badge">Data Modeling</span>
+        </div>
+    </section>
 
-</section>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">PROJECTS</h2>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: parth@gmail.com</p>
-    <p>LinkedIn: <a href="YOUR_LINKEDIN" target="_blank">your LinkedIn</a></p>
-    <p>GitHub: <a href="YOUR_GITHUB" target="_blank">your GitHub</a></p>
-</section>
+        <div class="project-grid">
 
-<footer>
-    © 2024 Parth Pratik – Data & Product Analyst Portfolio
-</footer>
+            <div class="project-card">
+                <h3>Unemployment Dashboard</h3>
+                <img src="dashboards/unemployment.jpg">
+                <a href="#">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>BlinkIT Sales Dashboard</h3>
+                <img src="dashboards/blinkit.jpg">
+                <a href="#">Live Dashboard</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Product Funnel Analysis</h3>
+                <img src="dashboards/funnel.jpg">
+                <a href="#">See Insights</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIVE DASHBOARD -->
+    <section id="dashboard">
+        <h2 class="section-title">LIVE DASHBOARD</h2>
+        <iframe src="YOUR_LOOKER_STUDIO_EMBED_LINK"></iframe>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="section-title">CONTACT</h2>
+        <p>
+            📧 Email: parthpratik18@gmail.com<br>
+            🔗 LinkedIn: <a href="#">parth pratik</a><br>
+            🐙 GitHub: <a href="#">parthpratik.github.io</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2024 Parth Pratik | Data Analyst Portfolio
+    </footer>
+
+    <!-- SCRIPTS: Typed.js + GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script>
+        /* Typing Effect */
+        var typed = new Typed("#typing-text", {
+            strings: [
+                "Crafting Stories From Numbers",
+                "Transforming Data Into Insights",
+                "Turning Raw Data Into Real Impact"
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true,
+            backDelay: 1500,
+        });
+
+        /* GSAP Animations */
+        gsap.from(".navbar", {
+            duration: 1.2, y: -40, opacity: 0, ease: "power3.out"
+        });
+        gsap.from(".hero-text", {
+            duration: 1.8, opacity: 0, y: 50, ease: "power3.out"
+        });
+        gsap.from(".nav-right a", {
+            duration: 1, opacity: 0, y: -20, stagger: 0.15, ease: "power2.out"
+        });
+    </script>
 
 </body>
 </html>
